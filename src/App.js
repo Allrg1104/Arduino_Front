@@ -6,7 +6,7 @@ function App() {
 
   // Función para cargar datos
   const fetchData = () => {
-    fetch('http://localhost:3000/api/datos')
+    fetch('https://arduino-front.vercel.app/api/datos')
       .then(res => {
         if (!res.ok) throw new Error('Error al obtener datos');
         return res.json();
