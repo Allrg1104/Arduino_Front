@@ -7,6 +7,7 @@ export default function App() {
   const fetchData = async () => {
     try {
       const res = await fetch("https://arduino-back.vercel.app/api/datos");
+      //const res = await fetch("http://localhost:3000/api/datos");
       if (!res.ok) throw new Error("Error al obtener datos");
       const data = await res.json();
       setRegistros(data);
